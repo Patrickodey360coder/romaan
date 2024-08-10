@@ -19,10 +19,6 @@ const Nav = () => {
       <div className="nav-content flex justify-between items-center">
         <div className="logo">Romaan</div>
         <div className="nav-links">
-          {/* <Link href="#">Home</Link>
-          <Link href="#">Membership</Link>
-          <Link href="#">About Us</Link>
-          <Link href="#">Shop</Link> */}
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>

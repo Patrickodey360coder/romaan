@@ -3,7 +3,7 @@ import Slider from "./components/Carousel";
 
 export default function Home() {
   return (
-    <main className="p-24">
+    <main className="main overflow-hidden">
       <Slider />
     </main>
   );

@@ -15,7 +15,7 @@ import {
 
 const Nav = () => {
   return (
-    <div className='max-w-[1280px] p-4'>
+    <div className='max-w-[1280px] p-4 mx-auto'>
       <div className="nav-content flex justify-between items-center">
         <div className="logo">Romaan</div>
         <div className="nav-links">

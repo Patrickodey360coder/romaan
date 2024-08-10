@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Nav = () => {
   return (
-    <div>
+    <div className='max-w-[1280px] p-4'>
       <div className="nav-content">
         <div className="logo">Romaan</div>
         <div className="nav-links">

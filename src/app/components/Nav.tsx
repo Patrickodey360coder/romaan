@@ -2,7 +2,12 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <div>
+      <div className="nav-content">
+        <div className="logo"></div>
+        <div className="nav-links"></div>
+      </div>
+    </div>
   )
 }
 

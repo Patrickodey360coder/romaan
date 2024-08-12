@@ -11,33 +11,51 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 
-
 const Slider = () => {
   return (
     <Swiper
-      className='h-[500px]'
-      spaceBetween={50}
+      className='2xl:h-[1000px] xl:h-[700px] lg:h-[600px] md:h-[500px] h-[400px] w-full'
+      spaceBetween={25}
       slidesPerView={1}
       autoplay={{
         delay: 2500,
         disableOnInteraction: false
       }}
+      loop={true}
       navigation={true}
       modules={[Autoplay]}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide className='w-full h-full'>
-        <Image src={Slide_One}  alt='slide one' height={1980}/>
+      <SwiperSlide className='w-full h-full relative'>
+        <Image
+          src={Slide_One}
+          alt='slide one'
+          fill
+          style={{ objectFit: 'cover' }} // or 'cover' depending on your needs
+        />
       </SwiperSlide>
-      <SwiperSlide className='w-full'>
-        <Image src={Slide_Two}  alt='slide two' height={1980}/>
+      <SwiperSlide className='w-full h-full relative'>
+        <Image
+          src={Slide_Two}
+          alt='slide two'
+          fill
+          style={{ objectFit: 'cover' }} // or 'cover'
+        />
       </SwiperSlide>
-      <SwiperSlide className='w-full'>
-        <Image src={Slide_Three}  alt='slide three' height={1980}/>
+      <SwiperSlide className='w-full h-full relative'>
+        <Image
+          src={Slide_Three}
+          alt='slide three'
+          fill
+          style={{ objectFit: 'cover' }} // or 'cover'
+        />
       </SwiperSlide>
-      <SwiperSlide className='w-full'>
-        <Image src={Slide_Four}  alt='slide Four' height={1980}/>
+      <SwiperSlide className='w-full h-full relative'>
+        <Image
+          src={Slide_Four}
+          alt='slide four'
+          fill
+          style={{ objectFit: 'cover' }} // or 'cover'
+        />
       </SwiperSlide>
     </Swiper>
   )

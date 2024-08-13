@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Link from 'next/link'
 import {
   NavigationMenu,
@@ -11,14 +12,20 @@ import {
   NavigationMenuViewport,
   navigationMenuTriggerStyle
 } from "@/components/ui/navigation-menu"
+import { GiHamburgerMenu } from "react-icons/gi";
 
 
 const Nav = () => {
+  const [menu, setMenu] = useState(false);
+
+  const toggleSidebar = () => {
+    setMenu(!menu)
+  }
   return (
     <div className='max-w-[1280px] p-4 mx-auto'>
       <div className="nav-content flex justify-between items-center">
         <div className="logo"><h1 className='text-xl font-[600]'>Romaan</h1></div>
-        <div className="nav-links">
+        <div className="nav-links sm:hidden md:flex">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -51,6 +58,9 @@ const Nav = () => {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+        </div>
+        <div className='flex md:hidden justify-center align-middle' onClick={toggleSidebar}>
+          <GiHamburgerMenu className='text-2xl' />
         </div>
       </div>
     </div>

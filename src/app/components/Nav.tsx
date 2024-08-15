@@ -15,8 +15,6 @@ import {
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 
-
-
 const Nav = () => {
   const [menu, setMenu] = useState(false);
 

@@ -3,13 +3,13 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
+  // NavigationMenuContent,
+  // NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
+  // NavigationMenuTrigger,
+  // NavigationMenuViewport,
   navigationMenuTriggerStyle
 } from "@/components/ui/navigation-menu"
 import { GiHamburgerMenu } from "react-icons/gi";

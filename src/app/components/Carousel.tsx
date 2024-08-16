@@ -17,7 +17,6 @@ import { Autoplay } from 'swiper/modules';
 
 
 
-
 const Slider = () => {
   return (
     <Swiper

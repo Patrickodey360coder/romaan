@@ -11,10 +11,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 
-type Superhero<T> = {
-  name: string,
-  age: number,
-}
+
 
 
 

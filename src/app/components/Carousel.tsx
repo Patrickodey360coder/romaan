@@ -21,11 +21,6 @@ const heroOne: Superhero<string> = {
   age: 30,
 }
 
-const heroTwo: Superhero<string[] | number[]> = {
-  name: 'Spiderman',
-  age: 30,
-}
-
 console.table(heroOne)
 
 console.table(heroTwo)

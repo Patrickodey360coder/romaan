@@ -11,6 +11,28 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 
+type Superhero<T> = {
+  name: string,
+  age: number,
+}
+
+const heroOne: Superhero<string> = {
+  name: 'Spiderman',
+  age: 30,
+}
+
+const heroTwo: Superhero<string[] | number[]> = {
+  name: 'Spiderman',
+  age: 30,
+}
+
+console.table(heroOne)
+
+console.table(heroTwo)
+
+
+
+
 const Slider = () => {
   return (
     <Swiper

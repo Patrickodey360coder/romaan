@@ -23,7 +23,6 @@ const heroOne: Superhero<string> = {
 
 console.table(heroOne)
 
-console.table(heroTwo)
 
 
 

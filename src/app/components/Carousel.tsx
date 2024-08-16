@@ -16,11 +16,6 @@ type Superhero<T> = {
   age: number,
 }
 
-const heroOne: Superhero<string> = {
-  name: 'Spiderman',
-  age: 30,
-}
-
 
 
 

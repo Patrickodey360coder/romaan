@@ -21,7 +21,7 @@ const heroOne: Superhero<string> = {
   age: 30,
 }
 
-console.table(heroOne)
+
 
 
 
